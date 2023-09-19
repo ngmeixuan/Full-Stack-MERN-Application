@@ -1,0 +1,2 @@
+MONGODB_URI = mongodb+srv://meixuanng:nRGIkIwgFFYpaVrW@cluster0.bvo6sr5.mongodb.net/app?retryWrites=true&w=majority
+MONGODB_URI_LOCAL = mongodb://localhost/UsersLocal
