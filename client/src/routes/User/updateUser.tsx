@@ -56,6 +56,16 @@ const UpdateUser: React.FC = () => {
     },
   };
 
+  const validateMessages = {
+    required: "${label} is required",
+    types: {
+      number: "${label} is not a valid number",
+    },
+    number: {
+      range: "${label} must be between ${min} and ${max}",
+    },
+  };
+
   useEffect(() => {
     // Fetch user data based on the user ID
     axios
@@ -112,6 +122,7 @@ const UpdateUser: React.FC = () => {
           form={form}
           style={{ maxWidth: 600 }}
           onFinish={onFinish}
+          validateMessages={validateMessages}
         >
           <Form.Item name="id" label="User ID" rules={[{ required: true }]}>
             <Input disabled />
@@ -124,7 +135,7 @@ const UpdateUser: React.FC = () => {
             label="Date of Birth"
             rules={[{ required: true }]}
           >
-            <DatePicker placeholder="Select date" showToday={false}/>
+            <DatePicker placeholder="Select date" showToday={false} />
           </Form.Item>
           <Form.Item name="gender" label="Gender" rules={[{ required: true }]}>
             <Select allowClear>
