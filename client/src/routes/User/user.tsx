@@ -138,7 +138,7 @@ const User: React.FC = () => {
           });
       },
       onCancel() {
-        message.info("Deletion canceled");
+        message.info("Deletion cancelled");
       },
     });
   };
