@@ -1,0 +1,29 @@
+{
+  "name": "user-app",
+  "version": "1.0.0",
+  "description": "express rest api",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [
+    "express",
+    "mongodb",
+    "nodejs"
+  ],
+  "author": "Mei Xuan",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "http-status-codes": "^2.2.0",
+    "mongodb": "^5.6.0",
+    "mongoose": "^7.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
